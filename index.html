@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Graph Snake!</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<html>
+    <canvas id="gameWindow" width="500" height="500"></canvas>
+
+    <h3 id="equation">No equation entered</h3>
+
+    <table>
+        <tr>
+            <button class="equationButtons" onclick="KeyPressed(0)">0</button>
+            <button class="equationButtons" onclick="KeyPressed(1)">1</button>
+            <button class="equationButtons" onclick="KeyPressed(2)">2</button>
+            <button class="equationButtons" onclick="KeyPressed(3)">3</button>
+            <button class="equationButtons" onclick="KeyPressed(4)">4</button>
+            <button class="equationButtons" onclick="KeyPressed(5)">5</button>
+            <button class="equationButtons" onclick="KeyPressed(6)">6</button>
+            <button class="equationButtons" onclick="KeyPressed(7)">7</button>
+            <button class="equationButtons" onclick="KeyPressed(8)">8</button>
+            <button class="equationButtons" onclick="KeyPressed(9)">9</button>
+        </tr>
+
+        <br>
+
+        <tr>
+            <button class="equationButtons" onclick="KeyPressed('+')">+</button>
+            <button class="equationButtons" onclick="KeyPressed('-')">-</button>
+            <button class="equationButtons" onclick="KeyPressed('*')">*</button>
+            <button class="equationButtons" onclick="KeyPressed('/')">/</button>
+            <button class="equationButtons" onclick="KeyPressed('|')">|</button>
+        </tr>
+
+        <br>
+
+        <tr>
+            <button class="equationButtons" onclick="KeyPressed('s')">sin(x)</button>
+            <button class="equationButtons" onclick="KeyPressed('c')">cos(x)</button>
+            <button class="equationButtons" onclick="KeyPressed('t')">tan(x)</button>
+        </tr>
+
+        <br>
+
+        <tr>
+            <button class="equationButtons" onclick="KeyPressed('^-1')">^-1</button>
+            <button class="equationButtons" onclick="KeyPressed('^2')">^2</button>
+            <button class="equationButtons" onclick="KeyPressed('^3')">^3</button>
+            <button class="equationButtons" onclick="KeyPressed('open')">(</button>
+            <button class="equationButtons" onclick="KeyPressed('close')">)</button>
+        </tr>
+
+        <br>
+        
+        <tr>
+            <button class="equationButtons" onclick="KeyPressed('x')">x</button>
+            <button class="equationButtons" onclick="KeyPressed('backspace')">BACKSPACE</button>
+            <button class="equationButtons" onclick="KeyPressed('clear')">CLEAR</button>
+            <button class="equationButtons" onclick="KeyPressed('enter')">ENTER</button>
+        </tr>
+    </table>
+</html>
+
+<script src="equation.js"></script>
+<script src="snake.js"></script>
+<script src="graph.js"></script>
